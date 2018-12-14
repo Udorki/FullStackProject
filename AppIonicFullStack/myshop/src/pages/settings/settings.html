@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Settings</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openLogin()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openList()">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openCart()">
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>Settings</ion-list-header>
+    <ion-item-sliding text-wrap *ngFor="let setting of settings" #item>
+      <ion-item>
+        <h2>{{setting.title}}</h2>
+        <p>{{setting.definition}}</p>
+      </ion-item>
+      <ion-item-options side="right" (ionSwipe)="yes(item)" icon-start>
+        <button ion-button color="secondary" (click)="yes(item)">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          Activate
+        </button>
+        <button ion-button color="danger" (click)="no(item)">
+          <ion-icon name="close"></ion-icon>
+          Deactivate
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

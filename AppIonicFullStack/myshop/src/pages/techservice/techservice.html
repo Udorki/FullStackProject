@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Technical Service</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openLogin()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openList()">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openCart()">
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding text-wrap *ngFor="let repairs of repairs">
+      <ion-item>
+        <ion-row align-item-first>
+          <ion-col>
+            <p>Employee: {{repairs.employee.name}} {{repairs.employee.surname}}</p>
+            <p>Role: {{repairs.employee.role.name}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

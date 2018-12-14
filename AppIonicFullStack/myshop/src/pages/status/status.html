@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Status</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openLogin()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openList()">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openCart()">
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding text-wrap *ngFor="let repairs of repairs">
+      <ion-item>
+        <ion-row align-item-first>
+          <ion-col>
+            <p>Client: {{repairs.client.name}}</p>
+            <p>Product: {{repairs.product}}</p>
+            <p>Problem: {{repairs.problem}}</p>
+          </ion-col>
+          <ion-col>
+            <p>Status: {{repairs.status}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

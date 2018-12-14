@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Products</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openLogin()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openList()">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="openCart()">
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding text-wrap (press)="remove(products)" *ngFor="let products of products">
+      <ion-item>
+        <ion-row align-items-start>
+          <ion-col>
+            <p>Name: {{products.name}}</p>
+            <p>Category: {{products.category.name}}</p>
+          </ion-col>
+          <ion-col>
+            <h2>Price: {{products.price}}</h2>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item-options side="right" icon-start>
+          <button ion-button color="secondary" (click)="openUpdate(products)">
+            <ion-icon name="refresh"></ion-icon>
+            Update
+          </button>
+        </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+<ion-footer text-center>
+  <button ion-button (click)="openModal()" color="primary">
+    <ion-icon name="create"></ion-icon>
+    Add Product
+  </button>
+</ion-footer>

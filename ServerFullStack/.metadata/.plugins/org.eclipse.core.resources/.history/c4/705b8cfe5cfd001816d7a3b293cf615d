@@ -1,0 +1,9 @@
+package com.kevin.myshop.controllers;
+
+import org.springframework.boot.web.servlet.error.ErrorController;
+
+@CrossOrigin("*")
+@RestController
+public class MyErrorController implements ErrorController  {
+
+}

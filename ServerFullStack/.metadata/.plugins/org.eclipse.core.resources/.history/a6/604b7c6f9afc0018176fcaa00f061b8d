@@ -1,0 +1,17 @@
+package com.kevin.myshop.controllers;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kevin.myshop.entity.models.Employees;
+
+@RestController
+public class ErrorController {
+
+	 @GetMapping("/employees")
+	 public String serverNotReady() {
+		 return "<html>";
+	 }
+}

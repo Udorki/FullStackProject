@@ -11,7 +11,7 @@
   <h1>Login</h1>
   <ion-input placeholder="Email/Username" type="text"></ion-input>
   <ion-input placeholder="Password" type="password"></ion-input>
-  <button ion-button class="register-btn" block clear >You don't have an account?</button>
-  <button ion-button class="register-btn" block clear >Forgotten your password?</button>
+  <button ion-button class="register-btn" block clear (click)="openAccount()">You don't have an account?</button>
+  <button ion-button class="register-btn" block clear (click)="openPassword()">Forgotten your password?</button>
   <button ion-button round>Enter</button>
 </ion-content>

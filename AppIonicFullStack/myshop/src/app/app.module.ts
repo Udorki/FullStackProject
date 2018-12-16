@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { CartPage } from '../pages/cart/cart';
 import { SettingsPage } from '../pages/settings/settings';
-import { LoginPage } from '../pages/login/login';
 import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -16,13 +15,15 @@ import { ProductsPageModule } from '../pages/products/products.module';
 import { HomePageModule } from '../pages/home/home.module';
 import { StatusPageModule } from '../pages/status/status.module';
 import { TechservicePageModule } from '../pages/techservice/techservice.module';
+import { LoginPageModule } from '../pages/login/login.module';
+import { ProductsService } from '../providers/products-service';
+import { TechserviceService } from '../providers/techservice-service';
 
 @NgModule({
   declarations: [
     MyApp,
     CartPage,
     SettingsPage,
-    LoginPage,
     ListPage,
     TabsPage
   ],
@@ -33,21 +34,23 @@ import { TechservicePageModule } from '../pages/techservice/techservice.module';
     ProductsPageModule,
     HomePageModule,
     TechservicePageModule,
-    StatusPageModule
+    StatusPageModule,
+    LoginPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     CartPage,
     SettingsPage,
-    LoginPage,
     ListPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ProductsService,
+    TechserviceService
   ]
 })
 export class AppModule {}

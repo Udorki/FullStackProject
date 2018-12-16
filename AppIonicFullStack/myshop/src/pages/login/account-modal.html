@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Create an account
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+                <span ion-text color="primary" showWhen="ios,core">Cancel</span>
+                <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form>
+        <ion-row>
+            <ion-col>
+                <ion-list inset>
+                    <ion-item>
+                        <ion-input placeholder="Username" type="text" name="username" required #username></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input placeholder="Email address" name="email" type="email" required #email></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input placeholder="Password" name="password" type="password" required #password></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input placeholder="Repeat password" name="repeat" type="password" required #repeat></ion-input>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+                <button ion-button color="primary" full type="submit" (click)="dismiss()">Create</button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

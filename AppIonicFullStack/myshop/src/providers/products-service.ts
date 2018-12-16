@@ -6,29 +6,54 @@ import {HttpClient } from '@angular/common/http';
 
 export class ProductsService {
     public API = 'http://localhost:3456'
-    public PRODUCTS_GET = this.API + '/products';
-    public PRODUCTS_POST = this.API + '/productPos';
-    public PRODUCTS_PUT = this.API + '/productPut';
-    public PRODUCTS_DEL = this.API + '/productDel';
-    public PRODUCTS_BY_ID = this.API + '/product';
-    public ALL_CATEGORIES = this.API + '/categories';
+    public PRODUCTS_GET = this.API + '/product/products';
+    public PRODUCTS_POST = this.API + '/product/productPos';
+    public PRODUCTS_PUT = this.API + '/product/productPut';
+    public PRODUCTS_DEL = this.API + '/product/productDel';
+    public PRODUCTS_BY_ID = this.API + '/product/product';
+    public ALL_CATEGORIES = this.API + '/category/categories';
 
     constructor(public http: HttpClient) {
     }
 
+    // getOptions() {
+    //     let user = "kevin";
+    //     let password = "kevin";
+    //     let base64UserAndPasswordKevin = window.btoa(user + ":" + password);
+
+    //     let basic = 'basic' + base64UserAndPasswordKevin;
+
+    //     let options = {
+    //         headers: {
+    //             'Authorization' : basic,
+    //             'Content-Type' : 'application/x-www-form-urlencoded',
+    //         }
+    //     };
+
+    //     return options;
+    // }
+
     getProducts(): Observable<any> {
+        // let options = this.getOptions();
+
         return this.http.get(this.PRODUCTS_GET);
     }
 
     getProductById(product_id: number): Observable<any> {
+        // let options = this.getOptions();
+
         return this.http.get(this.PRODUCTS_BY_ID + '/' + product_id);
     }
     
     getCategories(): Observable<any> {
+        // let options = this.getOptions();
+
         return this.http.get(this.ALL_CATEGORIES);
     }
 
     save(products : any): Observable<any> {
+        // let options = this.getOptions();
+
         let result: Observable<Object>;
         let productData = new FormData();
         productData.append("category", products.category);
@@ -40,6 +65,8 @@ export class ProductsService {
     }
 
     updateProducts(products: any, product_id: number): Observable<any> {
+        // let options = this.getOptions();
+
         let result: Observable<Object>;
         let productUpdate = new FormData();
         productUpdate.append("category", products.category);
@@ -52,6 +79,8 @@ export class ProductsService {
     }
 
     remove(id : string) {
+        // let options = this.getOptions();
+
         return this.http.delete(this.PRODUCTS_DEL + '/' + id)
     }
 

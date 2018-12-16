@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.dao.IProductsDao"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.services.IProductsService"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.dao.IPurchasesDao"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.services.IPurchasesService"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.NotEmpty"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.dao.IRepairsDao"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.services.IRepairsService"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.models.Repairs"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.dao.IUsersDao"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.services.IUsersService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.kevin.myshop.entity.models.Users"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
@@ -16,9 +33,12 @@
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.kevin.myshop.entity.dao.IPurchasedProductsDao"/>
 <fullyQualifiedTypeName name="com.kevin.myshop.entity.models.PurchasedProducts"/>
 <fullyQualifiedTypeName name="com.kevin.myshop.entity.services.IPurchasedProductsService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
@@ -40,24 +60,4 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
-<fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.builders.HttpSecurity"/>
-<fullyQualifiedTypeName name="org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder"/>
-<fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
-<fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
-<fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-<fullyQualifiedTypeName name="com.kevin.myshop.entity.services.JpaUserDetailsService"/>
-<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="com.kevin.myshop.entity.dao.IUsersDao"/>
-<fullyQualifiedTypeName name="com.kevin.myshop.entity.models.Users"/>
-<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UsernameNotFoundException"/>
-<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
-<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetails"/>
-<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

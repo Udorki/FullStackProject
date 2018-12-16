@@ -21,27 +21,27 @@ public class RepairsController {
 	@Autowired
 	private IRepairsService repairsService;
 	
-	@GetMapping("/repair/repairs")
+	@GetMapping("/repairs")
 	public List<Repairs> findAll() {
 		return repairsService.findAll();
 	}
 	
-	@GetMapping("/repair/searchRepair/{RepairId}")
+	@GetMapping("/repair/{RepairId}")
 	public Repairs findById(@PathVariable(value = "RepairId") long RepairId) {
 		return repairsService.findById(RepairId);
 	}
 	
-	@PostMapping("/repair/repairPos")
+	@PostMapping("/repairPos")
 	public void createRepair(Repairs repair) {
 		repairsService.createRepair(repair);
 	}
 	
-	@PutMapping("/repair/repairPut/{RepairId}")
+	@PutMapping("/repairPut/{RepairId}")
 	public void updateRepair(Repairs repair, @PathVariable(value = "RepairId") long RepairId) {
 		repairsService.updateRepair(repair, RepairId);
 	}
 	
-	@DeleteMapping("/repair/repairDel/{RepairId}")
+	@DeleteMapping("/repairDel/{RepairId}")
 	public void deleteRepair(Repairs repair, @PathVariable(value = "RepairId") long RepairId) {
 		repairsService.deleteRepair(RepairId);
 	}

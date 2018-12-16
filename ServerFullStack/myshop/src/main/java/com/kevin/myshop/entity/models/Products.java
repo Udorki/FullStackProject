@@ -42,7 +42,7 @@ public class Products implements Serializable {
 	@NotNull
 	private int units;
 	
-	/*@ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE }, mappedBy = "products")
+	/*@ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
 	private Set<Purchases> purchases;*/
 
 	public long getProduct_id() {

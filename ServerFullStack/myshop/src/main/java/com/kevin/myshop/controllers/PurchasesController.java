@@ -21,27 +21,27 @@ public class PurchasesController {
 	@Autowired
 	private IPurchasesService purchasesService;
 	
-	@GetMapping("/purchase/purchases")
+	@GetMapping("/purchases")
 	public List<Purchases> findAll() {
 		return purchasesService.findAll();
 	}
 	
-	@GetMapping("/purchase/searchPurchase/{PurchaseId}")
+	@GetMapping("/purchase/{PurchaseId}")
 	public Purchases findById(@PathVariable(value = "PurchaseId") long PurchaseId) {
 		return purchasesService.findById(PurchaseId);
 	}
 	
-	@PostMapping("/purchase/purchasePos")
+	@PostMapping("/purchasePos")
 	public void createPurchase(Purchases purchase) {
 		purchasesService.createPurchase(purchase);
 	}
 	
-	@PutMapping("/purchase/purchasePut/{PurchaseId}")
+	@PutMapping("/purchasePut/{PurchaseId}")
 	public void updatePurchase(Purchases purchase, @PathVariable(value = "PurchaseId") long PurchaseId) {
 		purchasesService.updatePurchase(purchase, PurchaseId);
 	}
 	
-	@DeleteMapping("/purchase/purchaseDel/{PurchaseId}")
+	@DeleteMapping("/purchaseDel/{PurchaseId}")
 	public void deletePurchase(Purchases purchase, @PathVariable(value = "PurchaseId") long PurchaseId) {
 		purchasesService.deletePurchase(PurchaseId);
 	}

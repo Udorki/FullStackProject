@@ -22,12 +22,12 @@ public class ProductsController {
 	@Autowired
 	private IProductsService productsService;
 	
-	@GetMapping("/product/products")
+	@GetMapping("/products")
 	public List<Products> findAll() {
 		return productsService.findAll();
 	}
 	
-	@GetMapping("/product/searchProduct/{ProductId}")
+	@GetMapping("/product/{ProductId}")
 	public Products findById(@PathVariable(value = "ProductId") long ProductId) {
 		return productsService.findById(ProductId);
 	}
@@ -37,17 +37,17 @@ public class ProductsController {
 		return productsService.findByCategory(category);
 	}*/
 	
-	@PostMapping("/product/productPos")
+	@PostMapping("/productPos")
 	public void createProduct(Products product) {
 		productsService.createProduct(product);
 	}
 	
-	@PutMapping("/product/productPut/{ProductId}")
+	@PutMapping("/productPut/{ProductId}")
 	public void updateProduct(Products product, @PathVariable(value = "ProductId") long ProductId) {
 		productsService.updateProduct(product, ProductId);
 	}
 	
-	@DeleteMapping("/product/productDel/{ProductId}")
+	@DeleteMapping("/productDel/{ProductId}")
 	public void deleteProduct(Products product, @PathVariable(value = "ProductId") long ProductId) {
 		productsService.deleteProduct(ProductId);
 	}

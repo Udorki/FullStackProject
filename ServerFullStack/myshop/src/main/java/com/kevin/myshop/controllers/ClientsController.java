@@ -21,27 +21,27 @@ public class ClientsController {
 	@Autowired
 	private IClientsService clientsService;
 	
-	@GetMapping("/clients")
+	@GetMapping("/client/clients")
 	public List<Clients> findAll() {
 		return clientsService.findAll();
 	}
 	
-	@GetMapping("/client/{ClientId}")
+	@GetMapping("/client/searchClient/{ClientId}")
 	public Clients findById(@PathVariable(value = "ClientId") long ClientId) {
 		return clientsService.findById(ClientId);
 	}
 	
-	@PostMapping("/clientPos")
+	@PostMapping("/client/clientPos")
 	public void createClient(Clients client) {
 		clientsService.createClient(client);
 	}
 	
-	@PutMapping("/clientPut/{ClientId}")
+	@PutMapping("/client/clientPut/{ClientId}")
 	public void updateClient(Clients client, @PathVariable(value = "ClientId") long ClientId) {
 		clientsService.updateClient(client, ClientId);
 	}
 	
-	@DeleteMapping("/clientDel/{ClientId}")
+	@DeleteMapping("/client/clientDel/{ClientId}")
 	public void deleteClient(Clients client, @PathVariable(value = "ClientId") long ClientId) {
 		clientsService.deleteClient(ClientId);
 	}

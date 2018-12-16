@@ -21,27 +21,27 @@ public class RolesController {
 	@Autowired
 	private IRolesService rolesService;
 	
-	@GetMapping("/roles")
+	@GetMapping("/role/roles")
 	public List<Roles> findAll() {
 		return rolesService.findAll();
 	}
 	
-	@GetMapping("/role/{RoleId}")
+	@GetMapping("/role/searchRole/{RoleId}")
 	public Roles findById(@PathVariable(value = "RoleId") long RoleId) {
 		return rolesService.findById(RoleId);
 	}
 	
-	@PostMapping("/rolePos")
+	@PostMapping("/role/rolePos")
 	public void createRole(Roles role) {
 		rolesService.createRole(role);
 	}
 	
-	@PutMapping("/rolePut/{RoleId}")
+	@PutMapping("/role/rolePut/{RoleId}")
 	public void updateRole(Roles role, @PathVariable(value = "RoleId") long RoleId) {
 		rolesService.updateRole(role, RoleId);
 	}
 	
-	@DeleteMapping("/roleDel/{RoleId}")
+	@DeleteMapping("/role/roleDel/{RoleId}")
 	public void deleteRole(Roles role, @PathVariable(value = "RoleId") long RoleId) {
 		rolesService.deleteRole(RoleId);
 	}

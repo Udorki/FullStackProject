@@ -11952,3 +11952,2283 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+!SESSION 2018-12-14 18:30:43.910 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2018-12-14 18:35:55.472
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-14 18:35:55.472
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@178f5b5b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47baf547,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:46.064
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:48.965
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.eKeeWdfq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:49.354
+!MESSAGE subscribing to classpath changes: sts4.classpath.eKeeWdfq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:49.389
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:49.424
+!MESSAGE subsribers = [sts4.classpath.eKeeWdfq]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:49.664
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:54.296
+!MESSAGE project myshop ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:54.855
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-14 18:36:54.920
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Udorki'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:54.954
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:55.176
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.eKeeWdfq => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:55.219
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:55.471
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:55.729
+!MESSAGE executing callback sts4.classpath.eKeeWdfq myshop false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:36:58.487
+!MESSAGE executing callback sts4.classpath.eKeeWdfq FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-12-14 18:36:58.837
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:38:28.915
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:38:29.476
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:15.200
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT | RESOLVED CLASSPATH CHANGED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.0.5.RELEASE\spring-boot-starter-data-jpa-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.5.RELEASE\spring-boot-starter-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.RELEASE\spring-boot-starter-logging-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.0.5.RELEASE\spring-boot-starter-aop-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\hibernate\hibernate-core\5.2.17.Final\hibernate-core-5.2.17.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.2.Final\hibernate-jpa-2.1-api-1.0.2.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\javassist\javassist\3.22.0-GA\javassist-3.22.0-GA.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-jpa\2.0.10.RELEASE\spring-data-jpa-2.0.10.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-commons\2.0.10.RELEASE\spring-data-commons-2.0.10.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-orm\5.0.9.RELEASE\spring-orm-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aspects\5.0.9.RELEASE\spring-aspects-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.5.RELEASE\spring-boot-starter-web-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.5.RELEASE\spring-boot-starter-json-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.5.RELEASE\spring-boot-starter-tomcat-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.34\tomcat-embed-core-8.5.34.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.34\tomcat-embed-el-8.5.34.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.34\tomcat-embed-websocket-8.5.34.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.12.Final\hibernate-validator-6.0.12.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-web\5.0.9.RELEASE\spring-web-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-webmvc\5.0.9.RELEASE\spring-webmvc-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-devtools\2.0.5.RELEASE\spring-boot-devtools-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\junit\junit\4.12\junit-4.12.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.0.5.RELEASE\spring-boot-starter-data-jpa-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.5.RELEASE\spring-boot-starter-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.RELEASE\spring-boot-starter-logging-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.0.5.RELEASE\spring-boot-starter-aop-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\hibernate\hibernate-core\5.2.17.Final\hibernate-core-5.2.17.Final.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.2.Final\hibernate-jpa-2.1-api-1.0.2.Final.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\javassist\javassist\3.22.0-GA\javassist-3.22.0-GA.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\data\spring-data-jpa\2.0.10.RELEASE\spring-data-jpa-2.0.10.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\data\spring-data-commons\2.0.10.RELEASE\spring-data-commons-2.0.10.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-orm\5.0.9.RELEASE\spring-orm-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-aspects\5.0.9.RELEASE\spring-aspects-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.5.RELEASE\spring-boot-starter-web-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.5.RELEASE\spring-boot-starter-json-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.5.RELEASE\spring-boot-starter-tomcat-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.34\tomcat-embed-core-8.5.34.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.34\tomcat-embed-el-8.5.34.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.34\tomcat-embed-websocket-8.5.34.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.12.Final\hibernate-validator-6.0.12.Final.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-web\5.0.9.RELEASE\spring-web-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-webmvc\5.0.9.RELEASE\spring-webmvc-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-devtools\2.0.5.RELEASE\spring-boot-devtools-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\junit\junit\4.12\junit-4.12.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\Udorki\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar[+]: {}
+		src/main/java[*]: {CHILDREN | CONTENT}
+			com[*]: {CONTENT}
+			com.kevin[*]: {CONTENT}
+			com.kevin.myshop[*]: {CHILDREN | CONTENT}
+				MyshopApplication.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.controllers[*]: {CHILDREN | CONTENT}
+				CategoriesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ClientsController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				EmployeesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				MyErrorController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ProductsController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				PurchasesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RepairsController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RolesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				UsersController.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.entity[*]: {CONTENT}
+			com.kevin.myshop.entity.dao[*]: {CHILDREN | CONTENT}
+				ICategoriesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IClientsDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IEmployeesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IProductsDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IPurchasesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRepairsDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRolesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IUsersDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.entity.models[*]: {CHILDREN | CONTENT}
+				Categories.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Clients.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Employees.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Products.java[*]: {CONTENT | PRIMARY RESOURCE}
+				[Working copy] Purchases.java[*]: {PRIMARY RESOURCE}
+				Repairs.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Roles.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Users.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.entity.services[*]: {CHILDREN | CONTENT}
+				CategoriesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ClientsServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				EmployeesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ICategoriesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IClientsService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IEmployeesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IProductsService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IPurchasesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRepairsService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRolesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IUsersService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ProductsServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				PurchasesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RepairsServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RolesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				UsersServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+		src/main/resources[*]: {CONTENT}
+			ResourceDelta(/myshop/src/main/resources/application.properties)[*]
+			ResourceDelta(/myshop/src/main/resources/static)[*]
+			ResourceDelta(/myshop/src/main/resources/templates)[*]
+		src/test/java[*]: {CHILDREN | CONTENT}
+			com[*]: {CONTENT}
+			com.kevin[*]: {CONTENT}
+			com.kevin.myshop[*]: {CHILDREN | CONTENT}
+				MyshopApplicationTests.java[*]: {CONTENT | PRIMARY RESOURCE}
+		ResourceDelta(/myshop/.classpath)[*]
+		ResourceDelta(/myshop/.gitignore)[*]
+		ResourceDelta(/myshop/.mvn)[*]
+		ResourceDelta(/myshop/.project)[*]
+		ResourceDelta(/myshop/.settings)[*]
+		ResourceDelta(/myshop/mvnw)[*]
+		ResourceDelta(/myshop/mvnw.cmd)[*]
+		ResourceDelta(/myshop/pom.xml)[*]
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:15.236
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:15.246
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:15.265
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:15.282
+!MESSAGE executing callback sts4.classpath.eKeeWdfq myshop false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:16.764
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:16.956
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:17.128
+!MESSAGE executing callback sts4.classpath.eKeeWdfq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:18.787
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:20.636
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:22.475
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:41:22.512
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:45:09.268
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Products.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-14 18:45:15.050
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-14 18:45:18.931
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-14 18:45:27.082
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-14 18:45:28.910
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-14 18:45:34.863
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:47:15.935
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Products.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:47:16.897
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-14 18:48:50.439
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:49:40.339
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Products.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:49:41.350
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:49:47.375
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Products.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 18:49:48.325
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-12-14 19:10:19.220
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/usssdk/drops/milestone/S20170523-143239-1.1-RC1.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at sun.reflect.GeneratedMethodAccessor151.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at sun.reflect.GeneratedMethodAccessor151.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:78)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-12-14 19:10:19.220
+!MESSAGE No repository found at http://download.eclipse.org/usssdk/drops/milestone/S20170523-143239-1.1-RC1.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-12-14 19:10:41.395
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/usssdk/updates/nightly.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:168)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at sun.reflect.GeneratedMethodAccessor151.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:78)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-12-14 19:10:41.395
+!MESSAGE No repository found at http://download.eclipse.org/usssdk/updates/nightly.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 19:36:10.575
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Products.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 19:36:10.605
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Purchases.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 19:36:10.627
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.eKeeWdfq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 19:36:10.635
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.eKeeWdfq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 19:36:10.644
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-14 19:36:10.653
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.eKeeWdfq => OK
+!SESSION 2018-12-15 13:58:53.372 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2018-12-15 14:02:03.776
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-15 14:02:03.776
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24b05292,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@34d6e9a4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:38.907
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:40.846
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IoIpoSRN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:40.930
+!MESSAGE subscribing to classpath changes: sts4.classpath.IoIpoSRN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:40.990
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:41.168
+!MESSAGE subsribers = [sts4.classpath.IoIpoSRN]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:41.216
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-12-15 14:02:44.652
+!MESSAGE Removing part descriptor with the 'org.eclipse.wb.core.StructureView' id and the 'Structure' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:47.302
+!MESSAGE project myshop ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:47.399
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:47.441
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:47.534
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:47.636
+!MESSAGE classpath=97 entries
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-15 14:02:47.737
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kevin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:47.910
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IoIpoSRN => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:47.984
+!MESSAGE executing callback sts4.classpath.IoIpoSRN myshop false 97
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-12-15 14:02:49.150
+!MESSAGE Removing part descriptor with the 'org.eclipse.wb.core.PaletteView' id and the 'Palette' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:02:50.031
+!MESSAGE executing callback sts4.classpath.IoIpoSRN FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-12-15 14:02:50.087
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:13.889
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:30.566
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT | RESOLVED CLASSPATH CHANGED}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.0.5.RELEASE\spring-boot-starter-data-jpa-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.5.RELEASE\spring-boot-starter-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.RELEASE\spring-boot-starter-logging-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.0.5.RELEASE\spring-boot-starter-aop-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\hibernate\hibernate-core\5.2.17.Final\hibernate-core-5.2.17.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.2.Final\hibernate-jpa-2.1-api-1.0.2.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\javassist\javassist\3.22.0-GA\javassist-3.22.0-GA.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\data\spring-data-jpa\2.0.10.RELEASE\spring-data-jpa-2.0.10.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\data\spring-data-commons\2.0.10.RELEASE\spring-data-commons-2.0.10.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-orm\5.0.9.RELEASE\spring-orm-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-aspects\5.0.9.RELEASE\spring-aspects-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.5.RELEASE\spring-boot-starter-web-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.5.RELEASE\spring-boot-starter-json-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.5.RELEASE\spring-boot-starter-tomcat-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.34\tomcat-embed-core-8.5.34.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.34\tomcat-embed-el-8.5.34.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.34\tomcat-embed-websocket-8.5.34.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.12.Final\hibernate-validator-6.0.12.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-web\5.0.9.RELEASE\spring-web-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-webmvc\5.0.9.RELEASE\spring-webmvc-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-devtools\2.0.5.RELEASE\spring-boot-devtools-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\junit\junit\4.12\junit-4.12.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\Udorki\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.0.5.RELEASE\spring-boot-starter-data-jpa-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.5.RELEASE\spring-boot-starter-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.RELEASE\spring-boot-starter-logging-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar[+]: {}
+		C:\Users\kevin\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar[+]: {}
+		C:\Users\kevin\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.0.5.RELEASE\spring-boot-starter-aop-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\hibernate\hibernate-core\5.2.17.Final\hibernate-core-5.2.17.Final.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.2.Final\hibernate-jpa-2.1-api-1.0.2.Final.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\javassist\javassist\3.22.0-GA\javassist-3.22.0-GA.jar[+]: {}
+		C:\Users\kevin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar[+]: {}
+		C:\Users\kevin\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-jpa\2.0.10.RELEASE\spring-data-jpa-2.0.10.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-commons\2.0.10.RELEASE\spring-data-commons-2.0.10.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-orm\5.0.9.RELEASE\spring-orm-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aspects\5.0.9.RELEASE\spring-aspects-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.5.RELEASE\spring-boot-starter-web-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.5.RELEASE\spring-boot-starter-json-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.5.RELEASE\spring-boot-starter-tomcat-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.34\tomcat-embed-core-8.5.34.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.34\tomcat-embed-el-8.5.34.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.34\tomcat-embed-websocket-8.5.34.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.12.Final\hibernate-validator-6.0.12.Final.jar[+]: {}
+		C:\Users\kevin\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-web\5.0.9.RELEASE\spring-web-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-webmvc\5.0.9.RELEASE\spring-webmvc-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-devtools\2.0.5.RELEASE\spring-boot-devtools-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar[+]: {}
+		C:\Users\kevin\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar[+]: {}
+		C:\Users\kevin\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar[+]: {}
+		C:\Users\kevin\.m2\repository\junit\junit\4.12\junit-4.12.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar[+]: {}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar[+]: {}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar[+]: {}
+		C:\Users\kevin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar[+]: {}
+		C:\Users\kevin\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar[+]: {}
+		src/main/java[*]: {CHILDREN | CONTENT}
+			com[*]: {CONTENT}
+			com.kevin[*]: {CONTENT}
+			com.kevin.myshop[*]: {CHILDREN | CONTENT}
+				MyshopApplication.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.controllers[*]: {CHILDREN | CONTENT}
+				CategoriesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ClientsController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				EmployeesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				MyErrorController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ProductsController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				PurchasesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RepairsController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RolesController.java[*]: {CONTENT | PRIMARY RESOURCE}
+				UsersController.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.entity[*]: {CONTENT}
+			com.kevin.myshop.entity.dao[*]: {CHILDREN | CONTENT}
+				ICategoriesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IClientsDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IEmployeesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IProductsDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IPurchasesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRepairsDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRolesDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IUsersDao.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.entity.models[*]: {CHILDREN | CONTENT}
+				Categories.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Clients.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Employees.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Products.java[*]: {CONTENT | PRIMARY RESOURCE}
+				[Working copy] Purchases.java[*]: {PRIMARY RESOURCE}
+				Repairs.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Roles.java[*]: {CONTENT | PRIMARY RESOURCE}
+				Users.java[*]: {CONTENT | PRIMARY RESOURCE}
+			com.kevin.myshop.entity.services[*]: {CHILDREN | CONTENT}
+				CategoriesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ClientsServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				EmployeesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ICategoriesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IClientsService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IEmployeesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IProductsService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IPurchasesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRepairsService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IRolesService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				IUsersService.java[*]: {CONTENT | PRIMARY RESOURCE}
+				ProductsServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				PurchasesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RepairsServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				RolesServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+				UsersServiceImplement.java[*]: {CONTENT | PRIMARY RESOURCE}
+		src/main/resources[*]: {CONTENT}
+			ResourceDelta(/myshop/src/main/resources/application.properties)[*]
+			ResourceDelta(/myshop/src/main/resources/static)[*]
+			ResourceDelta(/myshop/src/main/resources/templates)[*]
+		src/test/java[*]: {CHILDREN | CONTENT}
+			com[*]: {CONTENT}
+			com.kevin[*]: {CONTENT}
+			com.kevin.myshop[*]: {CHILDREN | CONTENT}
+				MyshopApplicationTests.java[*]: {CONTENT | PRIMARY RESOURCE}
+		ResourceDelta(/myshop/.classpath)[*]
+		ResourceDelta(/myshop/.gitignore)[*]
+		ResourceDelta(/myshop/.mvn)[*]
+		ResourceDelta(/myshop/.project)[*]
+		ResourceDelta(/myshop/.settings)[*]
+		ResourceDelta(/myshop/mvnw)[*]
+		ResourceDelta(/myshop/mvnw.cmd)[*]
+		ResourceDelta(/myshop/pom.xml)[*]
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:30.794
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:30.809
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:30.832
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:30.870
+!MESSAGE executing callback sts4.classpath.IoIpoSRN myshop false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:33.047
+!MESSAGE executing callback sts4.classpath.IoIpoSRN FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-12-15 14:03:33.076
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:33.194
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:35.810
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:38.166
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:38.555
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:42.537
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:03:42.687
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:08:39.668
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Purchases.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:08:39.684
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IoIpoSRN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:08:39.693
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.IoIpoSRN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:08:39.702
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:08:39.711
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IoIpoSRN => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:13.948
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.aUVecVgB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:13.957
+!MESSAGE subscribing to classpath changes: sts4.classpath.aUVecVgB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:13.965
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:13.974
+!MESSAGE subsribers = [sts4.classpath.aUVecVgB]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.021
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.225
+!MESSAGE project myshop ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.239
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.256
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.aUVecVgB => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.273
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.286
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.344
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.395
+!MESSAGE executing callback sts4.classpath.aUVecVgB myshop false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:14.519
+!MESSAGE executing callback sts4.classpath.aUVecVgB SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:26.389
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aUVecVgB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:26.401
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.aUVecVgB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:26.409
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:26.420
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aUVecVgB => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:59.536
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.iKKETJFc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:59.549
+!MESSAGE subscribing to classpath changes: sts4.classpath.iKKETJFc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:59.557
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:59.722
+!MESSAGE subsribers = [sts4.classpath.iKKETJFc]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:11:59.731
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.016
+!MESSAGE project myshop ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.035
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.054
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.063
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.iKKETJFc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.071
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.087
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.107
+!MESSAGE executing callback sts4.classpath.iKKETJFc myshop false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:00.439
+!MESSAGE executing callback sts4.classpath.iKKETJFc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:11.484
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				MyshopApplication.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:11.499
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iKKETJFc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:11.509
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.iKKETJFc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:11.518
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:12:11.527
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iKKETJFc => OK
+
+!ENTRY org.eclipse.jface.text 2 0 2018-12-15 14:13:24.632
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.561
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ecmWoDre
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.573
+!MESSAGE subscribing to classpath changes: sts4.classpath.ecmWoDre
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.581
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.606
+!MESSAGE subsribers = [sts4.classpath.ecmWoDre]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.617
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.eclipse.ui 4 0 2018-12-15 14:13:25.684
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.springframework.tooling.ls.eclipse.commons.ProjectSorter$1.run(ProjectSorter.java:39)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:977)
+	at org.eclipse.jdt.internal.ui.wizards.NewElementWizard.performFinish(NewElementWizard.java:139)
+	at org.eclipse.jdt.internal.ui.wizards.NewClassCreationWizard.performFinish(NewClassCreationWizard.java:74)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:775)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:414)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:622)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:821)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:136)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3958)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3561)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.696
+!MESSAGE project myshop ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.710
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.719
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.734
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ecmWoDre => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.745
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.774
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:25.796
+!MESSAGE executing callback sts4.classpath.ecmWoDre myshop false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:27.835
+!MESSAGE executing callback sts4.classpath.ecmWoDre FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-12-15 14:13:27.851
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:31.442
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				SpringSecurityConfig.java[+]: {}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:31.574
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.775
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PDJdYLCP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.785
+!MESSAGE subscribing to classpath changes: sts4.classpath.PDJdYLCP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.793
+!MESSAGE subsribers = [sts4.classpath.PDJdYLCP, sts4.classpath.ecmWoDre]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.802
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.856
+!MESSAGE project myshop ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.864
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.873
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.881
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PDJdYLCP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.890
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.905
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:32.916
+!MESSAGE executing callback sts4.classpath.PDJdYLCP myshop false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:13:33.229
+!MESSAGE executing callback sts4.classpath.PDJdYLCP SUCCESS [done]
+
+!ENTRY org.eclipse.jface.text 2 0 2018-12-15 14:17:49.906
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:06.813
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:08.166
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Products.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:15.602
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] ProductsController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:16.784
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] RepairsController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:20.114
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.dao[*]: {CHILDREN}
+				[Working copy] IProductsDao.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:22.251
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.dao[*]: {CHILDREN}
+				IProductsDao.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:27.993
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				[Working copy] IProductsService.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:29.416
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				[Working copy] IRepairsService.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:34.506
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				IRepairsService.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:35.787
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				IProductsService.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:37.506
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				[Working copy] ProductsServiceImplement.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:27:41.731
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				ProductsServiceImplement.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:28:14.626
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] ProductsController.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:28:15.065
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:28:36.891
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] RepairsController.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:28:37.144
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:28.721
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/pom.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.062
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT | RESOLVED CLASSPATH CHANGED}
+		C:\Users\kevin\.m2\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\hibernate-core\5.2.17.Final\hibernate-core-5.2.17.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.2.Final\hibernate-jpa-2.1-api-1.0.2.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\javassist\javassist\3.22.0-GA\javassist-3.22.0-GA.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-jpa\2.0.10.RELEASE\spring-data-jpa-2.0.10.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-commons\2.0.10.RELEASE\spring-data-commons-2.0.10.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-orm\5.0.9.RELEASE\spring-orm-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aspects\5.0.9.RELEASE\spring-aspects-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.0.5.RELEASE\spring-boot-starter-security-2.0.5.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-config\5.0.8.RELEASE\spring-security-config-5.0.8.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-web\5.0.8.RELEASE\spring-security-web-5.0.8.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.5.RELEASE\spring-boot-starter-web-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.5.RELEASE\spring-boot-starter-json-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.5.RELEASE\spring-boot-starter-tomcat-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.34\tomcat-embed-core-8.5.34.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.34\tomcat-embed-el-8.5.34.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.34\tomcat-embed-websocket-8.5.34.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.12.Final\hibernate-validator-6.0.12.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-web\5.0.9.RELEASE\spring-web-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-webmvc\5.0.9.RELEASE\spring-webmvc-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-devtools\2.0.5.RELEASE\spring-boot-devtools-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\junit\junit\4.12\junit-4.12.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-test\5.0.8.RELEASE\spring-security-test-5.0.8.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-core\5.0.8.RELEASE\spring-security-core-5.0.8.RELEASE.jar[*]: {REMOVED FROM CLASSPATH}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.251
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.276
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.299
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.323
+!MESSAGE executing callback sts4.classpath.PDJdYLCP myshop false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.400
+!MESSAGE executing callback sts4.classpath.PDJdYLCP SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.517
+!MESSAGE executing callback sts4.classpath.ecmWoDre myshop false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:36.592
+!MESSAGE executing callback sts4.classpath.ecmWoDre FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-12-15 14:31:36.611
+!MESSAGE 
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.ecmWoDre'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 14:31:41.246
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:00:08.459
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Categories.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:00:13.481
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Categories.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:00:18.154
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] CategoriesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-15 15:00:20.684
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:00:49.772
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] CategoriesController.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:00:51.225
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:01:56.576
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				CategoriesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:01:57.574
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				RepairsController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:00.667
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				ProductsController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:01.892
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] CategoriesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:05.238
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				CategoriesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:06.520
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] ClientsController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:07.763
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] EmployeesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:11.009
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] PurchasesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:12.100
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] RolesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:12.972
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] UsersController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:02:28.621
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Products.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:09:45.192
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] ClientsController.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:09:45.479
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:09:49.925
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				ClientsController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:10:19.187
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] EmployeesController.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:10:19.652
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:10:23.770
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				EmployeesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.eclipse.lsp4e 4 0 2018-12-15 15:10:35.409
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:10:45.084
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] PurchasesController.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:10:45.445
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:10:46.084
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				PurchasesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:11:04.736
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] RolesController.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					RolesController[*]: {CHILDREN | FINE GRAINED}
+						deleteRole(Roles, long)[*]: {ANNOTATIONS}
+							@DeleteMapping[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:11:05.417
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:11:05.578
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:11:09.377
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				RolesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:11:29.314
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] UsersController.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:11:29.664
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:11:34.186
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				UsersController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:24:17.486
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				[Working copy] RolesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:24:19.823
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.controllers[*]: {CHILDREN}
+				RolesController.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:42.399
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/pom.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:50.909
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT | RESOLVED CLASSPATH CHANGED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.0.5.RELEASE\spring-boot-starter-jdbc-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\zaxxer\HikariCP\2.7.9\HikariCP-2.7.9.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jdbc\5.0.9.RELEASE\spring-jdbc-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\hibernate-core\5.2.17.Final\hibernate-core-5.2.17.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.2.Final\hibernate-jpa-2.1-api-1.0.2.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\javassist\javassist\3.22.0-GA\javassist-3.22.0-GA.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-jpa\2.0.10.RELEASE\spring-data-jpa-2.0.10.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\data\spring-data-commons\2.0.10.RELEASE\spring-data-commons-2.0.10.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-orm\5.0.9.RELEASE\spring-orm-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-tx\5.0.9.RELEASE\spring-tx-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-aspects\5.0.9.RELEASE\spring-aspects-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.5.RELEASE\spring-boot-starter-web-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.5.RELEASE\spring-boot-starter-json-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.5.RELEASE\spring-boot-starter-tomcat-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.34\tomcat-embed-core-8.5.34.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.34\tomcat-embed-el-8.5.34.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.34\tomcat-embed-websocket-8.5.34.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.12.Final\hibernate-validator-6.0.12.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-web\5.0.9.RELEASE\spring-web-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-webmvc\5.0.9.RELEASE\spring-webmvc-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-devtools\2.0.5.RELEASE\spring-boot-devtools-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.0.5.RELEASE\spring-boot-starter-test-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test\2.0.5.RELEASE\spring-boot-test-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.5.RELEASE\spring-boot-test-autoconfigure-2.0.5.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\junit\junit\4.12\junit-4.12.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\spring-test\5.0.9.RELEASE\spring-test-5.0.9.RELEASE.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar[*]: {REORDERED}
+		C:\Users\kevin\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.0.5.RELEASE\spring-boot-starter-security-2.0.5.RELEASE.jar[*]: {ADDED TO CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-config\5.0.8.RELEASE\spring-security-config-5.0.8.RELEASE.jar[*]: {ADDED TO CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-web\5.0.8.RELEASE\spring-security-web-5.0.8.RELEASE.jar[*]: {ADDED TO CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-test\5.0.8.RELEASE\spring-security-test-5.0.8.RELEASE.jar[*]: {ADDED TO CLASSPATH}
+		C:\Users\kevin\.m2\repository\org\springframework\security\spring-security-core\5.0.8.RELEASE\spring-security-core-5.0.8.RELEASE.jar[*]: {ADDED TO CLASSPATH}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:51.585
+!MESSAGE Preparing classpath changed notification myshop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:51.618
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:51.633
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:51.834
+!MESSAGE executing callback sts4.classpath.PDJdYLCP myshop false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:51.876
+!MESSAGE executing callback sts4.classpath.PDJdYLCP SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:51.888
+!MESSAGE executing callback sts4.classpath.ecmWoDre myshop false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:51.898
+!MESSAGE executing callback sts4.classpath.ecmWoDre FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2018-12-15 15:32:51.907
+!MESSAGE 
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.ecmWoDre'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:32:58.721
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:37:43.207
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:37:44.046
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:39:26.841
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Employees.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:39:34.788
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Roles.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:40:25.773
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Roles.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:40:26.660
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Employees.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:40:29.326
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Users.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:40:30.767
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Clients.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:42:14.015
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:42:14.229
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:44:42.615
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				JpaUserDetailsService.java[+]: {}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:44:42.872
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				[Working copy] JpaUserDetailsService.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:44:43.014
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:44:44.192
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:44:49.212
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Users.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:44:50.640
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Clients.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:48:40.225
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.dao[*]: {CHILDREN}
+				[Working copy] IUsersDao.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:49:10.434
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.dao[*]: {CHILDREN}
+				[Working copy] IUsersDao.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:49:11.003
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:49:11.179
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.dao[*]: {CHILDREN}
+				IUsersDao.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:55:25.122
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				[Working copy] JpaUserDetailsService.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:55:25.389
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:56:37.781
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:56:37.806
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:56:46.210
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:56:46.598
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:56:56.886
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				[Working copy] JpaUserDetailsService.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:56:57.247
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/src)[*]
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:57:30.402
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				[Working copy] Users.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:57:34.176
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.models[*]: {CHILDREN}
+				Users.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:57:51.109
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				[Working copy] JpaUserDetailsService.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					<import container>[*]: {CHILDREN | FINE GRAINED}
+						import org.springframework.security.core.authority.SimpleGrantedAuthority[-]: {}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:57:51.830
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 15:57:51.998
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:03:11.326
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:03:13.153
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:03:49.876
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN | CONTENT}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				[Working copy] SpringSecurityConfig.java[*]: {PRIMARY RESOURCE}
+		ResourceDelta(/myshop/src)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:03:50.340
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CONTENT}
+		ResourceDelta(/myshop/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:11:03.881
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop[*]: {CHILDREN}
+				SpringSecurityConfig.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:11:04.360
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	myshop[*]: {CHILDREN}
+		src/main/java[*]: {CHILDREN}
+			com.kevin.myshop.entity.services[*]: {CHILDREN}
+				JpaUserDetailsService.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:11:04.371
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PDJdYLCP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:11:04.380
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.PDJdYLCP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:11:04.389
+!MESSAGE subsribers = [sts4.classpath.ecmWoDre]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-15 16:11:04.397
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PDJdYLCP => OK
+!SESSION 2018-12-15 16:14:19.694 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2018-12-15 16:17:21.564
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-15 16:17:21.564
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@62d72091,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76a86677,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-15 16:17:35.023
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kevin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.osgi 2 0 2018-12-15 16:17:41.676
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-10: Update dynamic Java sources working sets,5,main]" timed out waiting (5002ms) for thread "Thread[Worker-9: Initializing Java Tooling,5,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.9.1.20180912-1601 [589]". To avoid deadlock, thread "Thread[Worker-10: Update dynamic Java sources working sets,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.9.1.20180912-1601"; osgi.identity="org.eclipse.m2e.jdt"; singleton:="true" [id=589] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:340)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3669)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3645)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3192)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3095)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3157)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2128)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3622)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3147)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3311)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2388)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2264)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	... 39 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3669)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3645)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3192)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3095)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3157)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2128)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3622)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3147)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3311)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2388)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:478)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaProject.getPackageFragmentRoots(JavaProject.java:2264)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:201)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater.updateElements(DynamicSourcesWorkingSetUpdater.java:182)
+	at org.eclipse.jdt.internal.ui.workingsets.DynamicSourcesWorkingSetUpdater$1.run(DynamicSourcesWorkingSetUpdater.java:169)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

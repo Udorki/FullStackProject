@@ -1,0 +1,30 @@
+/*package com.kevin.myshop;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+
+@Configuration
+public class SpringSecurityConfig extends WebSecurityConfigureAdapter {
+
+	@Autowired
+	private JpaUserDetailsService userDetailsService;
+	
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
+	
+	@Bean
+	public BCryptPasswordEncoder passwordEncoder() {
+		BCryptPasswordEncoder bCryptPassowrdEncoder = new BCryptPasswordEncoder();
+	}
+	
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http.csrf().disable()
+			.authorizeRequests()
+			.antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+				.antMatchers("/categories").permitAll()
+				.antMatchers("/categorie/*").permitAll()
+				.antMatchers("/categoriePos").permitAll()
+				.antMatchers
+	}
+}*/

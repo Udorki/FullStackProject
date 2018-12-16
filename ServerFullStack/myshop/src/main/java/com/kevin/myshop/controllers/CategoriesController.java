@@ -21,27 +21,27 @@ public class CategoriesController {
 	@Autowired
 	private ICategoriesService categoriesService;
 	
-	@GetMapping("/categories")
+	@GetMapping("/category/categories")
 	public List<Categories> findAll() {
 		return categoriesService.findAll();
 	}
 	
-	@GetMapping("/category/{CategoryId}")
+	@GetMapping("/category/searchCategory/{CategoryId}")
 	public Categories findById(@PathVariable(value = "CategoryId") long CategoryId) {
 		return categoriesService.findById(CategoryId);
 	}
 	
-	@PostMapping("/categoryPos")
+	@PostMapping("/category/categoryPos")
 	public void createCategory(Categories category) {
 		categoriesService.createCategory(category);
 	}
 	
-	@PutMapping("/categoryPut/{CategoryId}")
+	@PutMapping("/category/categoryPut/{CategoryId}")
 	public void updateCategory(Categories category, @PathVariable(value = "CategoryId") long CategoryId) {
 		categoriesService.updateCategory(category, CategoryId);
 	}
 	
-	@DeleteMapping("/categoryDel/{CategoryId}")
+	@DeleteMapping("/category/categoryDel/{CategoryId}")
 	public void deleteCategory(Categories category, @PathVariable(value = "CategoryId") long CategoryId) {
 		categoriesService.deleteCategory(CategoryId);
 	}

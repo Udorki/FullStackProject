@@ -21,27 +21,27 @@ public class UsersController {
 	@Autowired
 	private IUsersService usersService;
 	
-	@GetMapping("/users")
+	@GetMapping("/user/users")
 	public List<Users> findAll() {
 		return usersService.findAll();
 	}
 	
-	@GetMapping("/user/{UserId}")
+	@GetMapping("/user/searchUser/{UserId}")
 	public Users findById(@PathVariable(value = "UserId") long UserId) {
 		return usersService.findById(UserId);
 	}
 	
-	@PostMapping("/userPos")
+	@PostMapping("/user/userPos")
 	public void createUser(Users user) {
 		usersService.createUser(user);
 	}
 	
-	@PutMapping("/userPut/{UserId}")
+	@PutMapping("/user/userPut/{UserId}")
 	public void updateUser(Users user, @PathVariable(value = "UserId") long UserId) {
 		usersService.updateUser(user, UserId);
 	}
 	
-	@DeleteMapping("/userDel/{UserId}")
+	@DeleteMapping("/user/userDel/{UserId}")
 	public void deleteUser(Users user, @PathVariable(value = "UserId") long UserId) {
 		usersService.deleteUser(UserId);
 	}

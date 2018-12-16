@@ -21,27 +21,27 @@ public class EmployeesController {
 	 @Autowired
 	 private IEmployeesService employeesService;
 	 
-	 @GetMapping("/employees")
+	 @GetMapping("/employee/employees")
 	 public List<Employees> findAll() {
 		 return employeesService.findAll();
 	 }
 	 
-	 @GetMapping("/employee/{EmployeeId}")
+	 @GetMapping("/employee/searchEmployee/{EmployeeId}")
 	 public Employees findById(@PathVariable(value = "EmployeeId") long EmployeeId) {
 		 return employeesService.findById(EmployeeId);
 	 }
 	 
-	 @PostMapping("/employeePos")
+	 @PostMapping("/employee/employeePos")
 	 public void createEmployee(Employees employee) {
 		 employeesService.createEmployee(employee);
 	 }
 	 
-	 @PutMapping("/employeePut/{EmployeeId}")
+	 @PutMapping("/employee/employeePut/{EmployeeId}")
 	 public void updateEmployee(Employees employee, @PathVariable(value = "EmployeeId") long EmployeeId) {
 		 employeesService.updateEmployee(employee, EmployeeId);
 	 }
 	 
-	 @DeleteMapping("/employeeDel/{EmployeeId}")
+	 @DeleteMapping("/employee/employeeDel/{EmployeeId}")
 	 public void deleteEmployee(Employees employee, @PathVariable(value = "EmployeeId") long EmployeeId) {
 		 employeesService.deleteEmployee(EmployeeId);
 	 }
